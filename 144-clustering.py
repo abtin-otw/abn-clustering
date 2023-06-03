@@ -15,7 +15,7 @@ z = data[:,2]
 clf = KMeansConstrained(
     n_clusters=410063,
     size_min=143,
-    size_max=145,
+    size_max=144,
     random_state=0
 )
 

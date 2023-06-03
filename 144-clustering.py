@@ -22,6 +22,7 @@ clf.fit_predict(data)
 df['cluster'] = clf.labels_
 
 #print(df['cluster'].value_counts())
+#print(df['cluster'])
 
 ax = plt.axes(projection='3d')
 ax.scatter(x, y, z, c = df['cluster'])

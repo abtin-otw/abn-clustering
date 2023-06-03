@@ -15,8 +15,7 @@ z = data[:,2]
 clf = KMeansConstrained(
     n_clusters=410063,
     size_min=143,
-    size_max=144,
-    random_state=0
+    size_max=144
 )
 
 clf.fit_predict(data)

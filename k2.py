@@ -1,7 +1,6 @@
 from scipy.cluster.vq import kmeans2
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 
 df = pd.read_csv("Points.txt", sep="    ", names = ["x", "y", "z"], engine='python')

@@ -5,7 +5,7 @@ import pandas as pd
 
 df = pd.read_csv("Points.txt", sep="    ", names = ["x", "y", "z"], engine='python')
 
-centroid, label = kmeans2(df, 69450, missing = 'warn', minit = 'points')
+centroid, label = kmeans2(df, k =, missing = 'warn', minit = 'points')
 
 df['cluster'] = label
 

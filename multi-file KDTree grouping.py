@@ -13,7 +13,7 @@ for intt in range(10):
 
     while True:
         tree = KDTree(ndf)
-        dis, ind = tree.query(ndf[0], k=15)
+        dis, ind = tree.query(ndf[0], k=144)
         ncl = str(counter)
         f.write("cluster "+ncl+"from file"+sintt+"\n")
         for i in ind:
@@ -27,7 +27,7 @@ for intt in range(10):
             f.write(point)
         ndf = np.delete(ndf, ind, 0)
         counter = counter + 1
-        if ndf.shape[0]<15:
+        if ndf.shape[0]<144:
             break
         
 f.close()
